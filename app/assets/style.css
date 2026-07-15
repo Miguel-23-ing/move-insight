@@ -1,0 +1,142 @@
+/* MotionScope — MoveInsight Inspired Medical Theme
+   ─────────────────────────────────────────────────────  */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* ── Hide Streamlit Deploy/Toolbar ── */
+#MainMenu { display: none !important; }
+.stDeployButton { display: none !important; }
+footer { display: none !important; }
+
+/* ── Reset & global ───────────────────────────────────────────────── */
+html, body, [class*="css"], .stApp {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+}
+
+/* ── Main container ───────────────────────────────────────────────── */
+.main .block-container {
+    padding: 0rem 2rem 4rem !important;
+    max-width: 1400px !important;
+}
+
+/* ── Sidebar ──────────────────────────────────────────────────────── */
+section[data-testid="stSidebar"] {
+    background: #F8FAFC !important;
+    border-right: 1px solid #E2E8F0 !important;
+}
+section[data-testid="stSidebar"] > div {
+    padding: 2rem 1.5rem !important;
+}
+
+/* ── Navbar ───────────────────────────────────────────────────────── */
+.moveinsight-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #E2E8F0;
+}
+.moveinsight-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.moveinsight-logo-icon {
+    font-size: 2rem;
+    color: #0F4C81;
+}
+.moveinsight-logo-text {
+    display: flex;
+    flex-direction: column;
+}
+.moveinsight-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #0F4C81;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+.moveinsight-subtitle {
+    font-size: 0.8rem;
+    color: #64748B;
+    font-weight: 500;
+}
+.moveinsight-nav-links {
+    display: flex;
+    gap: 16px;
+}
+.mi-btn-outline {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0F4C81;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* ── Primary buttons ──────────────────────────────────────────────── */
+.stButton > button {
+    background: #008B8B !important; /* Teal/Cyan like the progress bar in image */
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 0.75rem 1.5rem !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    transition: all 0.2s !important;
+    width: 100% !important;
+}
+.stButton > button:hover {
+    background: #006B6B !important;
+}
+.stButton > button:disabled {
+    background: #F1F5F9 !important;
+    color: #94A3B8 !important;
+}
+
+/* ── File uploader ────────────────────────────────────────────────── */
+[data-testid="stFileUploader"] {
+    background: #FFFFFF !important;
+    border: 2px dashed #CBD5E1 !important;
+    border-radius: 12px !important;
+    padding: 1rem !important;
+    transition: all 0.2s ease !important;
+}
+[data-testid="stFileUploader"]:hover {
+    border-color: #008B8B !important;
+    background: #F0FDF4 !important;
+}
+
+/* Radio Button styles removed to allow main.py to handle them */
+
+/* ── Progress bar ─────────────────────────────────────────────────── */
+.stProgress > div > div > div { background: #008B8B !important; border-radius: 99px !important; height: 8px !important;}
+.stProgress > div { height: 8px !important; }
+
+/* ── Headings ─────────────────────────────────────────────────────── */
+h1, h2, h3 { color: #0F4C81 !important; font-weight: 800 !important; letter-spacing: -0.02em !important; }
+
+/* ── Video ────────────────────────────────────────────────────────── */
+[data-testid="stVideo"] {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    border: 1px solid #E2E8F0 !important;
+}
+
+/* ── Section Titles ───────────────────────────────────────────────── */
+.section-title {
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: #0F4C81;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+}
